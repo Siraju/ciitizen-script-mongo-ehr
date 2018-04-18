@@ -3,7 +3,7 @@
 Ciitizen Script allows easy connection between Ciitizen and your EMR systems.
 
 ## Steps to deploy
-- sign up for [GitHub](github.com) and [Netlify](app.netlify.com)
+- sign up for [GitHub](https://github.com) and [Netlify](https://app.netlify.com)
 - click the Deploy button below to deploy script
 - check the status (URL from Netlify) to ensure working
 
