@@ -20,10 +20,11 @@ class LambdaDemo extends Component {
   render() {
     const {loading, msg} = this.state;
 
-    return <p>
-      <button onClick={this.handleClick}>{loading ? 'Loading...' : 'Call Lambda'}</button><br/>
-      <span>{msg}</span>
-    </p>
+    return <div>
+      <button onClick={this.handleClick}>{loading ? 'Loading...' : 'Test connection'}</button><br/>
+      <p>{msg}</p>
+      <p>{ msg === "Hello, World!" ? 'successfully connected' : 'error trying to connect'}</p>
+    </div>
   }
 }
 
