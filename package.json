@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
+    "mongo": "^0.1.0",
     "netlify-lambda": "^0.4.0",
     "npm": "^5.8.0",
     "react": "^16.3.1",

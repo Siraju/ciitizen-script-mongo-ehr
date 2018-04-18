@@ -22,12 +22,12 @@ class LambdaDemo extends Component {
     return <div>
       <button onClick={this.handleClick}>{loading ? 'Loading...' : 'Test connection'}</button><br/>
       <p>{msg}</p>
-      <p>{ msg === "Hello, World!" ? 'successfully connected' : 'error trying to connect'}</p>
+      <p>{ msg === "Hello, World!" ? 'successfully connected' : 'not connected'}</p>
     </div>
   }
 }
 
-// class AnotherCall extends Component {
+// class Other extends Component {
 //   constructor(props) {
 //     super(props);
 //     this.state = {loading: false, msg: null};
@@ -37,7 +37,7 @@ class LambdaDemo extends Component {
 //     e.preventDefault();
 //
 //     this.setState({loading: true});
-//     fetch('/.netlify/functions/hello')
+//     fetch('/.netlify/functions/getRecord')
 //       .then(response => response.json())
 //       .then(json => this.setState({loading: false, msg: json.msg}));
 //   }
@@ -61,6 +61,7 @@ class App extends Component {
           Test connectivity below.
         </p>
         <LambdaDemo/>
+        {/* <Other /> */}
       </div>
     );
   }
